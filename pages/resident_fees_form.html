@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees Form</title>
+</head>
+
+<body>
+    <h1>Resident Fees Form</h1>
+    <!-- form for fees  `Name` varchar(20) DEFAULT NULL,
+  `RegNo` int(10) DEFAULT NULL,
+  `Department` varchar(20) DEFAULT NULL,
+  `Amount` int(8) DEFAULT NULL,
+  `Bank_recipt_no` varchar(20) NOT NULL,
+  `Payment_date` date DEFAULT NULL,
+  `Expiration_date` date DEFAULT NULL -->
+    <form action="resident_fees_form.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+        <br>
+        <label for="regNo">Registration Number</label>
+        <input type="number" name="regNo" id="regNo" required>
+        <br>
+        <label for="department">Department</label>
+        <input type="text" name="department" id="department" required>
+        <br>
+        <label for="amount">Amount</label>
+        <input type="number" name="amount" id="amount" required>
+        <br>
+        <label for="bankReciptNo">Bank Recipt Number</label>
+        <input type="text" name="bankReciptNo" id="bankReciptNo" required>
+        <br>
+        <label for="paymentDate">Payment Date</label>
+        <input type="date" name="paymentDate" id="paymentDate" required>
+        <br>
+        <label for="expirationDate">Expiration Date</label>
+        <input type="date" name="expirationDate" id="expirationDate" required>
+        <br>
+        <!-- <input type="submit" value="Submit"> -->
+        <a href="resident_fees_list.html" class="button">Submit</a>
+    </form>
+</body>
+
+</html>
